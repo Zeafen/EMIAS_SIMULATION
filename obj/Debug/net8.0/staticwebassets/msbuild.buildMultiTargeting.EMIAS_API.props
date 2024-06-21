@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\EMIAS_API.props" />
+</Project>
