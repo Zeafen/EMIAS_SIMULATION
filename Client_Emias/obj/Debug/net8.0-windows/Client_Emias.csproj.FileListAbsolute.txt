@@ -1,0 +1,4 @@
+C:\Users\Kombucha\Desktop\Client_Emias\Client_Emias\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Kombucha\Desktop\Client_Emias\Client_Emias\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Kombucha\Desktop\Client_Emias\Client_Emias\obj\Debug\net8.0-windows\Client_Emias_MarkupCompile.cache
+C:\Users\Kombucha\Desktop\Client_Emias\Client_Emias\obj\Debug\net8.0-windows\Client_Emias_MarkupCompile.lref
