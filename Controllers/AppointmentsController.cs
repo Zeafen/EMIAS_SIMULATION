@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using EMIAS_API.Models;
+using NuGet.Configuration;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using Microsoft.JSInterop;
 
 namespace EMIAS_API.Controllers
 {
@@ -25,6 +28,28 @@ namespace EMIAS_API.Controllers
         public async Task<ActionResult<IEnumerable<Appointment>>> GetAppointments()
         {
             return await _context.Appointments.ToListAsync();
+        }
+        // GET: api/Appointments
+        [HttpGet("active")]
+        public async Task<ActionResult<IEnumerable<Appointment>>> GetActiveAppointments()
+        {
+            return await _context.Appointments.OrderBy(a => isAppointmentActive(a.AppointmentDate, a.AppoinmentTime) && (a.IdStatus == null || a.IdStatus == 0)).ToListAsync();
+        }
+        // GET: api/Appointments
+        [HttpGet("archived")]
+        public async Task<ActionResult<IEnumerable<Appointment>>> GetArchivedAppointments()
+        {
+            return await _context.Appointments.OrderBy(a => !isAppointmentActive(a.AppointmentDate, a.AppoinmentTime) && (a.IdStatus == null || a.IdStatus == 0)).ToListAsync();
+        }
+        // GET: api/Appointments
+        [HttpPost("busytime/{id}")]
+        public async Task<ActionResult<IEnumerable<TimeOnly>>> GetBusyTimeForDoctor(int? id, DateOnly date)
+        {
+            var doctors = await _context.Appointments.OrderBy(a => a.IdDoctor == id && a.AppointmentDate.Equals(date)).Select(a => a.AppoinmentTime).ToListAsync();
+            if (doctors == null)
+                return NotFound();
+            else
+                return doctors;
         }
 
         // GET: api/Appointments/5
@@ -103,5 +128,14 @@ namespace EMIAS_API.Controllers
         {
             return _context.Appointments.Any(e => e.IdAppointment == id);
         }
+        private bool isAppointmentActive(DateOnly appDate, TimeOnly appTime)
+        {
+            var date = DateTime.Now;
+            return (appDate.Year > date.Year) ||
+            (appDate.Year == date.Year && appDate.Month > date.Month) ||
+            (appDate.Year == date.Year && appDate.Month == date.Month && appDate.Day > date.Day) ||
+            (appDate.Year == date.Year && appDate.Month == date.Month && appDate.Day == date.Day && appTime.Ticks > date.TimeOfDay.Ticks);
+        }
     }
+
 }

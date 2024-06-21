@@ -40,6 +40,19 @@ namespace EMIAS_API.Controllers
 
             return doctor;
         }
+        // GET: api/Doctors/5
+        [HttpGet("byspeciality/{id}")]
+        public async Task<ActionResult<IEnumerable<Doctor>>> GetDoctorBySpeciality(int? id)
+        {
+            var doctors = await _context.Doctors.OrderBy(d => d.IdSpeciality == id).ToListAsync();
+
+            if (doctors == null)
+            {
+                return NotFound();
+            }
+
+            return doctors;
+        }
 
         // PUT: api/Doctors/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
