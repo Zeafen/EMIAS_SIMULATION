@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kombucha\\Desktop\\Client_Emias\\Client_Emias\\Client_Emias.csproj": {}
+    "C:\\Users\\Negativ\\Desktop\\Время\\EMIAS_SIMULATION\\Client_Emias\\Client_Emias.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kombucha\\Desktop\\Client_Emias\\Client_Emias\\Client_Emias.csproj": {
+    "C:\\Users\\Negativ\\Desktop\\Время\\EMIAS_SIMULATION\\Client_Emias\\Client_Emias.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kombucha\\Desktop\\Client_Emias\\Client_Emias\\Client_Emias.csproj",
+        "projectUniqueName": "C:\\Users\\Negativ\\Desktop\\Время\\EMIAS_SIMULATION\\Client_Emias\\Client_Emias.csproj",
         "projectName": "Client_Emias",
-        "projectPath": "C:\\Users\\Kombucha\\Desktop\\Client_Emias\\Client_Emias\\Client_Emias.csproj",
-        "packagesPath": "C:\\Users\\Kombucha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kombucha\\Desktop\\Client_Emias\\Client_Emias\\obj\\",
+        "projectPath": "C:\\Users\\Negativ\\Desktop\\Время\\EMIAS_SIMULATION\\Client_Emias\\Client_Emias.csproj",
+        "packagesPath": "C:\\Users\\Negativ\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Negativ\\Desktop\\Время\\EMIAS_SIMULATION\\Client_Emias\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Kombucha\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Negativ\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,12 +39,6 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "dependencies": {
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[13.0.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -60,15 +50,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            },
-            "Microsoft.WindowsDesktop.App.WPF": {
-              "privateAssets": "none"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

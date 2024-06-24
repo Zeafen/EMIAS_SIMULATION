@@ -1,0 +1,15 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+    <Brush x:Key="PrimaryBackground">#FFFFFF</Brush>
+    <Brush x:Key="SecondaryBackground">#EDEDED</Brush>
+
+    <Brush x:Key="PrimaryTextColour">#000000</Brush>
+    <Brush x:Key="SecondaryTextColour">#807F7F</Brush>
+
+    <Brush x:Key="FocusColour">#007BFE</Brush>
+
+    <Brush x:Key="AttentionColour">#FE0000</Brush>
+
+    <materialDesign:PackIcon Kind="MoonWaningCrescent" x:Key="ThemeIcon" />
+</ResourceDictionary>
