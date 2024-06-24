@@ -1,0 +1,61 @@
+﻿<Page x:Class="Client_Emias.Admin.AdminPage"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Client_Emias.Admin"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1500"
+      Background="{DynamicResource PrimaryBackground}"
+      Title="AdminPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2.6*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <DataGrid Background="{DynamicResource SecondaryBackground}"></DataGrid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+
+            </Grid.RowDefinitions>
+            <Button Name="InsertButton" Background="{DynamicResource FocusColour}" Foreground="White"  Content="Добавить запись" Grid.Row="1" Margin="5"></Button>
+            <Button Name="UpdateButton" Background="{DynamicResource FocusColour}" Foreground="White"  Content="Изменить запись" Grid.Row="2" Margin="5"></Button>
+            <Button Name="DeleteButton" Background="{DynamicResource FocusColour}" Foreground="White"  Content="Удалить запись" Grid.Row="3" Margin="5"></Button>
+            <Button Name="LogOutButton" Background="{DynamicResource AttentionColour}" Foreground="White"  Content="Выйти из аккаунта"  Grid.Row="4" Margin="10"></Button>
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <ComboBox Name="RolesComboBox" Grid.Row="0" SelectionChanged="ComboBox_SelectionChanged" MinHeight="27" MinWidth="362" materialDesign:HintAssist.Hint="Роль пользователя" Foreground="{DynamicResource SecondaryTextColour}">
+                    <ComboBoxItem Content="Пользователь" Background="{DynamicResource SecondaryBackground}" Foreground="{DynamicResource SecondaryTextColour}"/>
+                    <ComboBoxItem Content="Врач" Background="{DynamicResource SecondaryBackground}" Foreground="{DynamicResource SecondaryTextColour}"/>
+                    <ComboBoxItem Content="Администратор" Background="{DynamicResource SecondaryBackground}" Foreground="{DynamicResource SecondaryTextColour}"/>
+                </ComboBox>
+                <TextBox Grid.Row="1" materialDesign:HintAssist.Hint="Пароль для входа" Style="{StaticResource MaterialDesignOutlinedTextBox}" Foreground="{DynamicResource PrimaryTextColour}" Margin="3" MinHeight="27" MinWidth="362"></TextBox>
+                <TextBox Grid.Row="2" materialDesign:HintAssist.Hint="Фамилия" Style="{StaticResource MaterialDesignOutlinedTextBox}" Foreground="{DynamicResource PrimaryTextColour}" Margin="3" MinHeight="27" MinWidth="362"></TextBox>
+                <TextBox Grid.Row="3" materialDesign:HintAssist.Hint="Имя" Style="{StaticResource MaterialDesignOutlinedTextBox}" Foreground="{DynamicResource PrimaryTextColour}" Margin="3" MinHeight="27" MinWidth="362"></TextBox>
+                <TextBox Grid.Row="4" materialDesign:HintAssist.Hint="Отчество" Style="{StaticResource MaterialDesignOutlinedTextBox}" Foreground="{DynamicResource PrimaryTextColour}" Margin="3" MinHeight="27" MinWidth="362"></TextBox>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Page>
