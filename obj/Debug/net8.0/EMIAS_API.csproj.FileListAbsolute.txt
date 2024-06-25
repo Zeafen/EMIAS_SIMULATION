@@ -262,3 +262,4 @@ C:\Users\Kombucha\Desktop\C# Practice\EMIAS_API\EMIAS_API\bin\Debug\net8.0\runti
 C:\Users\Kombucha\Desktop\C# Practice\EMIAS_API\EMIAS_API\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\Kombucha\Desktop\C# Practice\EMIAS_API\EMIAS_API\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Kombucha\Desktop\C# Practice\EMIAS_API\EMIAS_API\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\Kombucha\Desktop\C# Practice\EMIAS_API\EMIAS_API\obj\Debug\net8.0\EMIAS_API.sourcelink.json

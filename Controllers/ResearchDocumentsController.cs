@@ -40,6 +40,20 @@ namespace EMIAS_API.Controllers
 
             return researchDocument;
         }
+        // GET: api/ResearchDocuments/5
+        [HttpGet("byoms/{id}")]
+        public async Task<ActionResult<IEnumerable<ResearchDocument>>> GetResearchDocumentByOms(long id)
+        {
+            var appointments = _context.Appointments.OrderBy(a => a.Oms == id);
+            var researchDocument = await _context.ResearchDocuments.OrderBy(doc => appointments.Any(a => a.IdAppointment == doc.IdAppointmentDocument)).ToListAsync();
+
+            if (researchDocument == null)
+            {
+                return NotFound();
+            }
+
+            return researchDocument;
+        }
 
         // PUT: api/ResearchDocuments/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754

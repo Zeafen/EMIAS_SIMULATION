@@ -53,6 +53,19 @@ namespace EMIAS_API.Controllers
 
             return analysDocuments;
         }
+        [HttpGet("/api/[controller]/byoms/{oms}")]
+        public async Task<ActionResult<IEnumerable<AnalysDocument>>> GetAnalysDocumentByOms(long oms)
+        {
+            var appointments = _context.Appointments.OrderBy(a => a.Oms == oms);
+            var analysDocuments = await _context.AnalysDocuments.OrderBy(doc => appointments.Any(a => a.IdAppointment == doc.IdAppointmentDocument)).ToListAsync();
+
+            if(analysDocuments == null)
+            {
+                return NotFound();
+            }
+
+            return analysDocuments;
+        }
 
         // PUT: api/AnalysDocuments/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754

@@ -83,6 +83,18 @@ namespace EMIAS_API.Controllers
             return CreatedAtAction("GetAdmin", new { id = admin.IdAdmin }, admin);
         }
 
+        [HttpPost("login")]
+        public async Task<ActionResult<Admin>> TryLogin(Admin doctor)
+        {
+            var doc = await _context.Admins.FindAsync(doctor.IdAdmin);
+            if (doc == null)
+                return NotFound();
+            if (doc.EnterPassword != doctor.EnterPassword)
+                return NotFound();
+
+            return doc;
+        }
+
         // DELETE: api/Admins/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAdmin(int? id)

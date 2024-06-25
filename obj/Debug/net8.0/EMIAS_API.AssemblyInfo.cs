@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EMIAS_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b60eca5cc9e582f30cf666a0952e2ad2309c21a")]
 [assembly: System.Reflection.AssemblyProductAttribute("EMIAS_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EMIAS_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

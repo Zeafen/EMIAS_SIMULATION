@@ -29,17 +29,29 @@ namespace EMIAS_API.Controllers
         {
             return await _context.Appointments.ToListAsync();
         }
-        // GET: api/Appointments
+        // GET: api/Appointments/active
         [HttpGet("active")]
         public async Task<ActionResult<IEnumerable<Appointment>>> GetActiveAppointments()
         {
-            return await _context.Appointments.OrderBy(a => isAppointmentActive(a.AppointmentDate, a.AppoinmentTime) && (a.IdStatus == null || a.IdStatus == 0)).ToListAsync();
+            return await _context.Appointments.OrderBy(a => isAppointmentActive(a.AppointmentDate, a.AppoinmentTime) && (a.IdStatus != null || a.IdStatus != 0)).ToListAsync();
+        }
+
+        // GET: api/Appointments/byDoctor
+        [HttpGet("bydoctor/{id}")]
+        public async Task<ActionResult<IEnumerable<Appointment>>> GetAppointmentsByDoc(int? id)
+        {
+            if (id == null)
+                return NotFound();
+            var appointments = await _context.Appointments.OrderBy(a => a.IdDoctor == id).ToListAsync();
+            if(appointments == null)
+                return NotFound();
+            return appointments;
         }
         // GET: api/Appointments
         [HttpGet("archived")]
         public async Task<ActionResult<IEnumerable<Appointment>>> GetArchivedAppointments()
         {
-            return await _context.Appointments.OrderBy(a => !isAppointmentActive(a.AppointmentDate, a.AppoinmentTime) && (a.IdStatus == null || a.IdStatus == 0)).ToListAsync();
+            return await _context.Appointments.OrderBy(a => !isAppointmentActive(a.AppointmentDate, a.AppoinmentTime) && (a.IdStatus != null || a.IdStatus != 0)).ToListAsync();
         }
         // GET: api/Appointments
         [HttpPost("busytime/{id}")]

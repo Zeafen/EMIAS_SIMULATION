@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using EMIAS_API.Models;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace EMIAS_API.Controllers
 {
@@ -94,6 +95,19 @@ namespace EMIAS_API.Controllers
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetDoctor", new { id = doctor.IdDoctor }, doctor);
+        }
+        // POST: api/Doctors
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [HttpPost("login")]
+        public async Task<ActionResult<Doctor>> TryLogin(Doctor doctor)
+        {
+            var doc = await _context.Doctors.FindAsync(doctor.IdDoctor);
+            if(doc == null)
+                return NotFound();
+            if (doc.EnterPassword != doctor.EnterPassword)
+                return NotFound();
+
+            return doc;
         }
 
         // DELETE: api/Doctors/5

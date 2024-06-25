@@ -40,6 +40,21 @@ namespace EMIAS_API.Controllers
 
             return direction;
         }
+        // GET: api/Directions/5
+        [HttpGet("bydoctor/{id}")]
+        public async Task<ActionResult<IEnumerable<Direction>>> GetDirectionsBySpeciality(int? id)
+        {
+            if(id == null)
+                return NotFound();
+            var direction = await _context.Directions.OrderBy(d => d.IdSpeciality == id).ToListAsync();
+
+            if (direction == null)
+            {
+                return NotFound();
+            }
+
+            return direction;
+        }
 
         // PUT: api/Directions/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
