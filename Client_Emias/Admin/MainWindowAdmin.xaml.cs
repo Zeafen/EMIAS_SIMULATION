@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Client_Emias.viewModels.Admins;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,19 +13,21 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Client_Emias.Admin
+namespace Client_Emias.AdminPages
 {
     /// <summary>
     /// Логика взаимодействия для MainWindowAdmin.xaml
     /// </summary>
     public partial class MainWindowAdmin : Window
     {
+        private AdminViewModel adminViewModel;
         bool isDark = false;
 
-        public MainWindow()
+        public MainWindowAdmin()
         {
+            adminViewModel = new AdminViewModel();
             InitializeComponent();
-            MainFrame.Content = new PatientPage();
+            MainFrame.Content = new PatientPage(adminViewModel);
         }
 
         private void ThemeChange_Click(object sender, RoutedEventArgs e)

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Client_Emias.Models;
 public partial class Patient
 {
-    public long Oms { get; set; }
+    public long? Oms { get; set; }
 
     public string SurName { get; set; } = null!;
 

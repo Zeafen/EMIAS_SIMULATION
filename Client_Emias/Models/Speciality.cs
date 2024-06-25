@@ -12,4 +12,9 @@ public partial class Speciality
     public string Name { get; set; } = null!;
 
     public string ImagePath { get; set; } = null!;
+
+    public override string ToString()
+    {
+        return $"{IdSpeciality} - {Name}";
+    }
 }

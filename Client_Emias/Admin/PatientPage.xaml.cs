@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Client_Emias.viewModels.Admins;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,15 +14,17 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Client_Emias.Admin
+namespace Client_Emias.AdminPages
 {
     /// <summary>
     /// Логика взаимодействия для PatientPage.xaml
     /// </summary>
     public partial class PatientPage : Page
     {
-        public PatientPage()
+        public AdminViewModel adminVm { get; set; }
+        public PatientPage(AdminViewModel _VM)
         {
+            this.adminVm = _VM;
             InitializeComponent();
         }
 
@@ -29,12 +32,10 @@ namespace Client_Emias.Admin
         {
             string selectedRole = (RolesComboBox.SelectedItem as ComboBoxItem).Content.ToString();
 
-            if (selectedRole == "Пользователь")
-                (Application.Current.MainWindow as MainWindow).MainFrame.Content = new PatientPage();
-            else if (selectedRole == "Врач")
-                (Application.Current.MainWindow as MainWindow).MainFrame.Content = new DoctorPage();
+            if (selectedRole == "Врач")
+                (Application.Current.MainWindow as MainWindowAdmin).MainFrame.Content = new DoctorPage(adminVm);
             else if (selectedRole == "Администратор")
-                (Application.Current.MainWindow as MainWindow).MainFrame.Content = new AdminPage();
+                (Application.Current.MainWindow as MainWindowAdmin).MainFrame.Content = new AdminPage(adminVm);
         }
     }
 }

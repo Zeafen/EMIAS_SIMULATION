@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Client_Emias.Helpers.ApiHelpers
 {
-    public static class PatientsControllerHelper
+    public static class PatientsHelper
     {
         private static string Url = "http://localhost5102/Api/Patients";
 
@@ -26,7 +26,7 @@ namespace Client_Emias.Helpers.ApiHelpers
             }
         }
 
-        public static string GetPatientById(int id)
+        public static string GetPatientById(long id)
         {
             try
             {
@@ -40,7 +40,7 @@ namespace Client_Emias.Helpers.ApiHelpers
             }
         }
 
-        public static string PutPatient(string json, int id)
+        public static string PutPatient(string json, long id)
         {
             try
             {
@@ -55,7 +55,7 @@ namespace Client_Emias.Helpers.ApiHelpers
             }
         }
 
-        public static string DeletePatient(int id)
+        public static string DeletePatient(long id)
         {
             try
             {
