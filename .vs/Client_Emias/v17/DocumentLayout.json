@@ -1,0 +1,118 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\EMIAS_SIMULATION\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7D0F0F33-DE20-4EAC-8C2D-43B54832A307}|Client_Emias\\Client_Emias.csproj|c:\\users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\emias_simulation\\client_emias\\viewmodels\\client\\doctormain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7D0F0F33-DE20-4EAC-8C2D-43B54832A307}|Client_Emias\\Client_Emias.csproj|solutionrelative:client_emias\\viewmodels\\client\\doctormain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D0F0F33-DE20-4EAC-8C2D-43B54832A307}|Client_Emias\\Client_Emias.csproj|c:\\users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\emias_simulation\\client_emias\\models\\appointmentdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D0F0F33-DE20-4EAC-8C2D-43B54832A307}|Client_Emias\\Client_Emias.csproj|solutionrelative:client_emias\\models\\appointmentdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 392,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{2bf2b8b2-10a8-5d39-9595-1e3f9d2eae15}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{9a7cebbb-dc5c-4986-bc49-962da46aa506}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:7:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppointmentDocument.cs",
+              "DocumentMoniker": "C:\\Users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\EMIAS_SIMULATION\\Client_Emias\\Models\\AppointmentDocument.cs",
+              "RelativeDocumentMoniker": "Client_Emias\\Models\\AppointmentDocument.cs",
+              "ToolTip": "C:\\Users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\EMIAS_SIMULATION\\Client_Emias\\Models\\AppointmentDocument.cs",
+              "RelativeToolTip": "Client_Emias\\Models\\AppointmentDocument.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T15:42:17.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DoctorMain.xaml",
+              "DocumentMoniker": "C:\\Users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\EMIAS_SIMULATION\\Client_Emias\\viewModels\\Client\\DoctorMain.xaml",
+              "RelativeDocumentMoniker": "Client_Emias\\viewModels\\Client\\DoctorMain.xaml",
+              "ToolTip": "C:\\Users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\EMIAS_SIMULATION\\Client_Emias\\viewModels\\Client\\DoctorMain.xaml",
+              "RelativeToolTip": "Client_Emias\\viewModels\\Client\\DoctorMain.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-23T13:42:37.072Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 167,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

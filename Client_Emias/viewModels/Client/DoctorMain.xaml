@@ -1,0 +1,278 @@
+﻿<Window x:Class="Client_Emias.viewModels.Client.DoctorMain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client_Emias.viewModels.Client"
+        mc:Ignorable="d"
+        Title="DoctorMain" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="18*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+
+            <Grid Grid.Column="0">
+                <TextBox Text="EMIAC"/>
+            </Grid>
+
+            <Grid Grid.Column="1">
+                <TextBox Text="--ФИО "/>
+            </Grid>
+
+            <Grid Grid.Column="2">
+
+                <Button Content="A" Grid.Column="0"/>
+                <Button Content="B" Grid.Column="1"/>
+                <Button Content="C" Grid.Column="2"/>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+            </Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.1*"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="0.1*"/>
+            </Grid.ColumnDefinitions>
+
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0">
+
+                <Grid Grid.Row="0">
+
+
+                    <DatePicker Grid.Row="0" Grid.Column="1">
+                        
+                    </DatePicker>
+
+                    <Grid Grid.Row="1" Grid.Column="1">
+
+                        <ListBox>
+                            
+                        </ListBox>
+                        
+                        
+                        
+                    </Grid>
+
+                    <Button Content="Выйти из аккаунта" Grid.Row="2" Grid.Column="1"/>
+
+
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.1*"/>
+                        <RowDefinition Height="0.8*"/>
+                        <RowDefinition Height="0.1*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.05*"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="0.05*"/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+            </Grid>
+
+            <Grid Grid.Column="1">
+
+                <Grid Grid.Row="0">
+
+                    <Grid Grid.Row="0">
+                        <TextBlock Text="Клиент ФИО" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left"/>
+                        <TextBlock Text="Номер полиса:" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Right"/>
+                        <TextBlock Text="Прием" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left"/>
+                        
+                        
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition Height="0.5*"/>
+                        </Grid.RowDefinitions>
+                        
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+
+                    <Grid Grid.Row="1">
+
+                        <TextBlock Text="Жалобы" Grid.Row="0" FontSize="5" HorizontalAlignment="Left" />
+                        <TextBox Grid.Row="1"/>
+
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition Height="3*"/>
+                        </Grid.RowDefinitions>
+                    </Grid>
+
+                    <Grid Grid.Row="2">
+
+                        <TextBlock Text="Общий осмотр" Grid.Row="0" FontSize="5" HorizontalAlignment="Left" />
+                        <TextBox Grid.Row="1"/>
+
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition Height="3*"/>
+                        </Grid.RowDefinitions>
+                    </Grid>
+
+                    <Grid Grid.Row="3">
+
+                        <TextBox Grid.Row="1" Text="Основной Диагноз" FontSize="6" VerticalAlignment="Center"/> 
+
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                    </Grid>
+
+                    <Grid Grid.Row="4">
+
+                        <TextBlock Text="Дополнение к основному диагнозу" Grid.Row="0" FontSize="5" HorizontalAlignment="Left" />
+                        <TextBox Grid.Row="1"/>
+
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition Height="3*"/>
+                        </Grid.RowDefinitions>
+                    </Grid>
+
+                    <Grid Grid.Row="5">
+
+                        <TextBlock Text="Рекомендации" Grid.Row="0" FontSize="5" HorizontalAlignment="Left" />
+                        <TextBox Grid.Row="1"/>
+
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition Height="3*"/>
+                        </Grid.RowDefinitions>
+                    </Grid>
+
+                    <Grid Grid.Row="6">
+
+                        <TextBlock Text="Направление"/>
+                        <TextBox Grid.Row="1" Text="Специальность врача" FontSize="6" VerticalAlignment="Center"/>
+                    
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                    </Grid>
+
+                    <Grid Grid.Row="7">
+
+                        <ListBox>
+                            
+                        </ListBox>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                    </Grid>
+
+                    <Grid Grid.Row="8">
+
+                        <CheckBox IsChecked="False" Content="Анализы" Grid.Column="0"/>
+                        <TextBox Text="Наименование анализа" Grid.Column="1"/>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.15*"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+
+                    <Grid Grid.Row="9">
+                        <TextBlock Text="Сюда РичТЕКСТ"/>
+
+                    </Grid>
+
+                    <Grid Grid.Row="10">
+                        <CheckBox IsChecked="False" Content="Исследования" Grid.Column="0"/>
+                        <TextBox Text="Наименование исследования" Grid.Column="1"/>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.2*"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+
+                    <Grid Grid.Row="11">
+
+                        <TextBlock Text="Сюда РичТЕКСТ"/>
+                    </Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1.5*"/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    
+                    
+                </Grid>
+
+                <Grid Grid.Row="1">
+                    <Button Content="Прикрепить дополнительные файлы"/>
+                </Grid>
+
+                <Grid Grid.Row="3">
+                    <Button Content="Завершить прием"/>
+                </Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="15*" />
+                    <RowDefinition />
+                    <RowDefinition Height="0.2*"/>
+                    <RowDefinition />
+                    <RowDefinition Height="0.2*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="0.01*"/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+            
+            
+
+
+        </Grid>
+
+    </Grid>
+</Window>
