@@ -95,6 +95,7 @@ namespace Client_Emias.ViewModel
             }
         }
 
+
         private DateOnly? _selectedDate { get; set; } = null;
         public DateOnly? SelectedDate
         {

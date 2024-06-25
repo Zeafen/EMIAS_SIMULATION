@@ -33,10 +33,10 @@
                 <RowDefinition Height="Auto"/>
 
             </Grid.RowDefinitions>
-            <Button Command="{Binding AddAdminCommand}" CommandParameter="{Binding SelectedAdmin}" Name="InsertButton" Background="{DynamicResource FocusColour}" Foreground="White"  Content="Добавить запись" Grid.Row="1" Margin="5"></Button>
-            <Button Command="{Binding UpdateAdminCommand}" CommandParameter="{Binding SelectedAdmin}" Name="UpdateButton" Background="{DynamicResource FocusColour}" Foreground="White"  Content="Изменить запись" Grid.Row="2" Margin="5"></Button>
-            <Button Command="{Binding DeleteAdminCommand}" CommandParameter="{Binding SelectedAdmin}" Name="DeleteButton" Background="{DynamicResource FocusColour}" Foreground="White"  Content="Удалить запись" Grid.Row="3" Margin="5"></Button>
-            <Button Name="LogOutButton" Background="{DynamicResource AttentionColour}" Foreground="White"  Content="Выйти из аккаунта"  Grid.Row="4" Margin="10"></Button>
+            <Button Command="{Binding AddAdminCommand}" CommandParameter="{Binding SelectedAdmin}" Name="InsertButton" Style="{DynamicResource FocusButton}"  Content="Добавить запись" Grid.Row="1" Margin="5"></Button>
+            <Button Command="{Binding UpdateAdminCommand}" CommandParameter="{Binding SelectedAdmin}" Name="UpdateButton" Style="{DynamicResource FocusButton}" Content="Изменить запись" Grid.Row="2" Margin="5"></Button>
+            <Button Command="{Binding DeleteAdminCommand}" CommandParameter="{Binding SelectedAdmin}" Name="DeleteButton" Style="{DynamicResource FocusButton}"  Content="Удалить запись" Grid.Row="3" Margin="5"></Button>
+            <Button Name="LogOutButton" Style="{DynamicResource AttentionButton}"  Content="Выйти из аккаунта"  Grid.Row="4" Margin="10"></Button>
             <Grid Grid.Row="0">
                 <Grid.RowDefinitions>
                     <RowDefinition/>
@@ -55,7 +55,7 @@
                 <ComboBox Name="RolesComboBox" Grid.Row="0" SelectionChanged="ComboBox_SelectionChanged" MinHeight="27" MinWidth="362" materialDesign:HintAssist.Hint="Роль пользователя" Foreground="{DynamicResource SecondaryTextColour}">
                     <ComboBoxItem Content="Пользователь" Background="{DynamicResource SecondaryBackground}" Foreground="{DynamicResource SecondaryTextColour}"/>
                     <ComboBoxItem Content="Врач" Background="{DynamicResource SecondaryBackground}" Foreground="{DynamicResource SecondaryTextColour}"/>
-                    <ComboBoxItem Content="Администратор" Background="{DynamicResource SecondaryBackground}" Foreground="{DynamicResource SecondaryTextColour}"/>
+                    <ComboBoxItem Content="Администратор" Background="{DynamicResource SecondaryBackground}" Foreground="{DynamicResource SecondaryTextColour}"></ComboBoxItem>
                 </ComboBox>
                 <PasswordBox Grid.Row="1" materialDesign:HintAssist.Hint="Пароль для входа" Style="{StaticResource MaterialDesignOutlinedPasswordBox}" materialDesign:PasswordBoxAssist.Password="{Binding SelectedAdmin.EnterPassword, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Foreground="{DynamicResource PrimaryTextColour}" Margin="3" MinHeight="27" MinWidth="362"></PasswordBox>
                 <TextBox Text="{Binding SelectedAdmin.Name, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Grid.Row="2" materialDesign:HintAssist.Hint="Фамилия" Style="{StaticResource MaterialDesignOutlinedTextBox}" Foreground="{DynamicResource PrimaryTextColour}" Margin="3" MinHeight="27" MinWidth="362"></TextBox>

@@ -198,11 +198,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kombucha\\Desktop\\Emias\\EMIAS_SIMULATION\\Client_Emias\\Client_Emias.csproj",
+      "projectUniqueName": "C:\\Users\\Kombucha\\Desktop\\EMIAS_SIMULATION\\Client_Emias\\Client_Emias.csproj",
       "projectName": "Client_Emias",
-      "projectPath": "C:\\Users\\Kombucha\\Desktop\\Emias\\EMIAS_SIMULATION\\Client_Emias\\Client_Emias.csproj",
+      "projectPath": "C:\\Users\\Kombucha\\Desktop\\EMIAS_SIMULATION\\Client_Emias\\Client_Emias.csproj",
       "packagesPath": "C:\\Users\\Kombucha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kombucha\\Desktop\\Emias\\EMIAS_SIMULATION\\Client_Emias\\obj\\",
+      "outputPath": "C:\\Users\\Kombucha\\Desktop\\EMIAS_SIMULATION\\Client_Emias\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

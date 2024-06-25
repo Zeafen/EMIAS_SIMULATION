@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w6XBG8P4NAO0iZWQw/FHBoT+O3TKdpEw+MZbUdmK9BrtDTxeFjLxEAROuz+zmvkVfoK8CPPz0kOVDf5LI0VHQA==",
+  "dgSpecHash": "L+y9jVNXPG50AMcQdXjfA3E6bL0YdK7+TnW6p24ULC3mJqBHp1GjxlRWQNH7iREkSb0dxmrycz1lg1oiBFM0rg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kombucha\\Desktop\\Emias\\EMIAS_SIMULATION\\Client_Emias\\Client_Emias.csproj",
+  "projectFilePath": "C:\\Users\\Kombucha\\Desktop\\EMIAS_SIMULATION\\Client_Emias\\Client_Emias.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kombucha\\.nuget\\packages\\materialdesigncolors\\3.1.0\\materialdesigncolors.3.1.0.nupkg.sha512",
     "C:\\Users\\Kombucha\\.nuget\\packages\\materialdesignthemes\\5.1.0\\materialdesignthemes.5.1.0.nupkg.sha512",

@@ -96,7 +96,7 @@ namespace Client_Emias.AdminPages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Client_Emias;V1.0.0.0;component/admin/doctorpage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Client_Emias;component/admin/doctorpage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Admin\DoctorPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

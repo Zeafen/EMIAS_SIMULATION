@@ -40,10 +40,10 @@
                 <RowDefinition Height="Auto"/>
 
             </Grid.RowDefinitions>
-            <Button Name="InsertButton" Command="{Binding AddAdminCommand}" CommandParameter="{Binding SelectedPatient}" Background="{DynamicResource FocusColour}" Foreground="White"  Content="Добавить запись" Grid.Row="1" Margin="5"></Button>
-            <Button Name="UpdateButton" Command="{Binding UpdateAdminCommand}" CommandParameter="{Binding SelectedPatient}" Background="{DynamicResource FocusColour}" Foreground="White"  Content="Изменить запись" Grid.Row="2" Margin="5"></Button>
-            <Button Name="DeleteButton" Command="{Binding DeleteAdminCommand}" CommandParameter="{Binding SelectedPatient}" Background="{DynamicResource FocusColour}" Foreground="White"  Content="Удалить запись" Grid.Row="3" Margin="5"></Button>
-            <Button Name="LogOutButton" Background="{DynamicResource AttentionColour}" Foreground="White"  Content="Выйти из аккаунта"  Grid.Row="4" Margin="10"></Button>
+            <Button Name="InsertButton" Command="{Binding AddAdminCommand}" CommandParameter="{Binding SelectedPatient}" Style="{DynamicResource FocusButton}"  Content="Добавить запись" Grid.Row="1" Margin="5"></Button>
+            <Button Name="UpdateButton" Command="{Binding UpdateAdminCommand}" CommandParameter="{Binding SelectedPatient}" Style="{DynamicResource FocusButton}"  Content="Изменить запись" Grid.Row="2" Margin="5"></Button>
+            <Button Name="DeleteButton" Command="{Binding DeleteAdminCommand}" CommandParameter="{Binding SelectedPatient}" Style="{DynamicResource FocusButton}"  Content="Удалить запись" Grid.Row="3" Margin="5"></Button>
+            <Button Name="LogOutButton" Style="{DynamicResource AttentionButton}"  Content="Выйти из аккаунта"  Grid.Row="4" Margin="10"></Button>
             <Grid Grid.Row="0">
                 <Grid.RowDefinitions>
                     <RowDefinition/>

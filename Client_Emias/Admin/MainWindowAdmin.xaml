@@ -12,14 +12,14 @@
             <RowDefinition/>
             <RowDefinition Height="17*"/>
         </Grid.RowDefinitions>
-        <Grid Background="{DynamicResource FocusColour}">
+        <Grid Background="{DynamicResource ThirdBackground}">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Column="0" Text="ЕМИАС Администратор" FontSize="20"  TextAlignment="Left" VerticalAlignment="Center"></TextBlock>
-            <Button Name="ThemeChange" Grid.Column="1" Width="50" Click="ThemeChange_Click" HorizontalAlignment="Left" Background="{DynamicResource FocusColour}" Content="{DynamicResource ThemeIcon}">
+            <TextBlock Style="{DynamicResource TitleText}" Grid.Column="0" Text="ЕМИАС Администратор" FontSize="20"  TextAlignment="Left" VerticalAlignment="Center" Padding="10,0"></TextBlock>
+            <Button Name="ThemeChange" Grid.Column="1" Width="50" Click="ThemeChange_Click" HorizontalAlignment="Left" Background="{DynamicResource ThirdBackground}" Content="{DynamicResource ThemeIcon}">
             </Button>
 
             <Grid Grid.Column="2">
@@ -29,17 +29,17 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <Button Name="MinimizeWindowButton" Grid.Column="0" Click="MinimizeWindowButton_Click" Background="{DynamicResource FocusColour}">
+                <Button Name="MinimizeWindowButton" Grid.Column="0" Click="MinimizeWindowButton_Click" Background="{DynamicResource ThirdBackground}">
                     <Button.Content>
                         <materialDesign:PackIcon Kind="WindowMinimize" />
                     </Button.Content>
                 </Button>
-                <Button Name="FullWindowButton" Grid.Column="1" Click="FullWindowButton_Click" Background="{DynamicResource FocusColour}">
+                <Button Name="FullWindowButton" Grid.Column="1" Click="FullWindowButton_Click" Background="{DynamicResource ThirdBackground}">
                     <Button.Content>
                         <materialDesign:PackIcon Kind="Fullscreen" />
                     </Button.Content>
                 </Button>
-                <Button Name="CloseWindowButton" Grid.Column="2" Click="CloseWindowButton_Click" Background="{DynamicResource AttentionColour}">
+                <Button Name="CloseWindowButton" Grid.Column="2" Click="CloseWindowButton_Click" Background="{DynamicResource Attentioncolor}">
                     <Button.Content>
                         <materialDesign:PackIcon Kind="Close" />
                     </Button.Content>
