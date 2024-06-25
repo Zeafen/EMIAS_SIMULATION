@@ -10,7 +10,7 @@ namespace Client_Emias.Helpers.ApiHelpers
 {
     public static class StatusControllerHelper
     {
-        private static string Url = "http://localhost5102/Api/Status";
+        private static string Url = $"http://localhost:{App.Port}/Api/Status";
 
         public static string GetStatuses()
         {

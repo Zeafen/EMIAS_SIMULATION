@@ -10,7 +10,7 @@ namespace Client_Emias.Helpers.ApiHelpers
 {
     public static class SpecialitiesHelper
     {
-        private static string Url = "http://localhost5102/Api/Specialities";
+        private static string Url = $"http://localhost:{App.Port}/Api/Specialities";
 
         public static string GetSpecialities()
         {

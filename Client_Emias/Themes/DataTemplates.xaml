@@ -1,0 +1,41 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+
+
+
+    <DataTemplate x:Key="SpecialityCell">
+        <Grid Margin="5" Background="{DynamicResource PrimaryBackground}">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Image HorizontalAlignment="Center">
+                <Image.Source>
+                    <BitmapImage UriSource="{Binding ImagePath}"/>
+                </Image.Source>
+            </Image>
+            <TextBlock TextAlignment="Center" Text="{Binding Name}" Style="{DynamicResource PrimaryNormalTextBlock}"/>
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="AppointmentDoctor">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="1,5*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="{Binding SpecialityName}" Style="{DynamicResource PrimaryNormalTextBlock}" TextAlignment="Center" TextWrapping="Wrap" TextTrimming="WordEllipsis" Grid.ColumnSpan="2"/>
+            <TextBlock Grid.Row="1" Text="{Binding FullNameWithDate}" Style="{DynamicResource SecondarySmallTextBlock}" TextAlignment="Left"  TextTrimming="WordEllipsis" TextWrapping="WrapWithOverflow"/>
+            <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding WorkAddress}" Style="{DynamicResource SecondarySmallTextBlock}" TextAlignment="Right" TextWrapping="WrapWithOverflow" TextTrimming="WordEllipsis" />
+
+            <Button Grid.Row="2" Content="Повторить" Style="{DynamicResource FocusButton}" Margin="5"/>
+            <Button Grid.Row="2" Grid.Column="1" Content="Отменить" Style="{DynamicResource AttentionButton}" Margin="5"/>
+        </Grid>
+    </DataTemplate>
+</ResourceDictionary>

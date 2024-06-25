@@ -10,7 +10,7 @@ namespace Client_Emias.Helpers.ApiHelpers
 {
     public static class AnalysDocumentHelper
     {
-        private static string Url = "http://localhost5102/Api/AnalysDocument";
+        private static string Url = $"http://localhost:{App.Port}/Api/AnalysDocument";
 
         public static string GetAnalysDocument()
         {

@@ -32,7 +32,7 @@ namespace Client_Emias.ViewModel
                 }
             }));
         private RelayCommand<Appointment>? _updateAppointment = null;
-        public RelayCommand<Appointment> UpdateAppointment => _deleteAppointment ?? (_deleteAppointment = new RelayCommand<Appointment>(
+        public RelayCommand<Appointment> UpdateAppointment => _updateAppointment ?? (_updateAppointment = new RelayCommand<Appointment>(
             canExecute: (Appointment app) => app.IdAppointment != null,
             execute: (Appointment app) =>
             {
@@ -62,6 +62,11 @@ namespace Client_Emias.ViewModel
         public ObservableCollection<Speciality> availableDoctors;
         public ObservableCollection<Appointment> currentAppointment;
         public ObservableCollection<Appointment> archivedAppointmens;
+        public ObservableCollection<DateOnly> thisWeekDays { get; set; }
+        public ObservableCollection<DateOnly> nextWeekDays { get; set; }
+        public ObservableCollection<TimeOnly> MorningTimes { get; set; }
+        public ObservableCollection<TimeOnly> DayTimes { get; set; }
+        public ObservableCollection<TimeOnly> EveningTimes { get; set; }
 
         private Speciality? _selectedSpeciality { get; set; } = null;
         public Speciality SelectedSpeciality
@@ -94,6 +99,17 @@ namespace Client_Emias.ViewModel
                 OnPropertyChanged();
             }
         }
+        private Appointment _selectedAppointment { get; set; }
+        public Appointment SelectedAppointment
+        {
+            get => _selectedAppointment;
+            set
+            {
+                _selectedAppointment = value;
+                OnPropertyChanged();
+            }
+        }
+
 
 
         private DateOnly? _selectedDate { get; set; } = null;
@@ -122,6 +138,7 @@ namespace Client_Emias.ViewModel
         {
             try
             {
+                GenerateTimes();
                 OMS = (long)Application.Current.Resources["oms"];
                 UpdateSource();
             }
@@ -179,6 +196,42 @@ namespace Client_Emias.ViewModel
             currentAppointment = new ObservableCollection<Appointment>(JsonConvert.DeserializeObject<ICollection<Appointment>>(AppointmentsHelper.GetActiveAppointments()) ?? new List<Appointment>());
             archivedAppointmens = new ObservableCollection<Appointment>(JsonConvert.DeserializeObject<ICollection<Appointment>>(AppointmentsHelper.GetArchivedAppointments()) ?? new List<Appointment>());
         }
+        private void UpdateDates()
+        {
+            thisWeekDays.Clear();
+            nextWeekDays.Clear();
+            var date = DateTime.Now;
+            switch(date.DayOfWeek)
+            {
+
+                case DayOfWeek.Monday:
+                    break;
+                case DayOfWeek.Tuesday:
+                    date.AddDays(-1);
+                    break;
+                case DayOfWeek.Wednesday:
+                    date.AddDays(-2);
+                    break;
+                case DayOfWeek.Thursday: date.AddDays(-3);
+                    break;
+                case DayOfWeek.Friday: date.AddDays(-4);
+                    break;
+                case DayOfWeek.Saturday: date.AddDays(-5);
+                    break;
+                case DayOfWeek.Sunday: date.AddDays(-6);
+                    break;
+            }
+            for (int i = 0; i < 7; i++)
+            {
+                thisWeekDays.Add(DateOnly.FromDateTime(date));
+                date.AddDays(1);
+            }
+            for (int i = 0; i < 7; i++)
+            {
+                nextWeekDays.Add(DateOnly.FromDateTime(date));
+                date.AddDays(1);
+            }
+        }
 
 
 
@@ -186,10 +239,58 @@ namespace Client_Emias.ViewModel
         private void OnPropertyChanged([CallerMemberName] string propertyName = "")
         {
             if (propertyName == nameof(SelectedSpeciality) && SelectedSpeciality != null)
-                currentDoctors = new ObservableCollection<Doctor>(JsonConvert.DeserializeObject<ICollection<Doctor>>(DoctorsHelper.GetDoctorsBySpeciality(SelectedSpeciality.IdSpeciality ?? 0))??new List<Doctor>());
-            else if(propertyName == nameof(SelectedDirection) && SelectedDirection != null)
+                currentDoctors = new ObservableCollection<Doctor>(JsonConvert.DeserializeObject<ICollection<Doctor>>(DoctorsHelper.GetDoctorsBySpeciality(SelectedSpeciality.IdSpeciality ?? 0)) ?? new List<Doctor>());
+            else if (propertyName == nameof(SelectedDirection) && SelectedDirection != null)
                 currentDoctors = new ObservableCollection<Doctor>(JsonConvert.DeserializeObject<ICollection<Doctor>>(DoctorsHelper.GetDoctorsBySpeciality(SelectedDirection.IdSpeciality)) ?? new List<Doctor>());
+            else if (propertyName == nameof(SelectedDate))
+                if(_selectedDate.HasValue)
+                    UpdateTime(_selectedDate.Value);
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        private void GenerateTimes()
+        {
+            TimeOnly time = new TimeOnly(8, 30, 0);
+            while(time.Minute != 0 && time.Hour != 12)
+            {
+                MorningTimes.Add(time);
+                time.AddMinutes(10);
+            }
+            while(time.Minute != 0 && time.Hour != 17)
+            {
+                DayTimes.Add(time);
+                time.AddMinutes(10);
+            }
+            while(time.Minute != 0 && time.Hour != 20)
+            {
+                EveningTimes.Add(time);
+                time.AddMinutes(10);
+            }
+        }
+
+        private void UpdateTime(DateOnly date)
+        {
+            var busyTime = JsonConvert.DeserializeObject<ICollection<TimeOnly>>(AppointmentsHelper.GetDoctorsBusyTime(SelectedDoctor.IdDoctor ?? 1, JsonConvert.SerializeObject(date)))?? new List<TimeOnly>();
+            if(busyTime.Count > 0)
+            {
+                var dayCollectionView = CollectionViewSource.GetDefaultView(DayTimes);
+                var morningCollectionView = CollectionViewSource.GetDefaultView(MorningTimes);
+                var eveningCollectionView = CollectionViewSource.GetDefaultView(EveningTimes);
+
+                dayCollectionView.Filter += (object t) => { return t is TimeOnly time && busyTime.All(t => t.Ticks != time.Ticks); };
+                morningCollectionView.Filter += (object t) => { return t is TimeOnly time && busyTime.All(t => t.Ticks != time.Ticks); };
+                eveningCollectionView.Filter += (object t) => { return t is TimeOnly time && busyTime.All(t => t.Ticks != time.Ticks); };
+            }
+            else
+            {
+                var dayCollectionView = CollectionViewSource.GetDefaultView(DayTimes);
+                var morningCollectionView = CollectionViewSource.GetDefaultView(MorningTimes);
+                var eveningCollectionView = CollectionViewSource.GetDefaultView(EveningTimes);
+
+                dayCollectionView.Filter = null;
+                morningCollectionView.Filter = null;
+                eveningCollectionView.Filter = null;
+            }
         }
     }
 }

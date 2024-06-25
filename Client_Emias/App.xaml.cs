@@ -9,6 +9,8 @@ namespace Client_Emias
     /// </summary>
     public partial class App : Application
     {
+        public static string Port { get; private set; } = "5133";
+
         private static string theme;
 
         public static string Theme

@@ -13,10 +13,16 @@
     <Compile Update="Admin\DoctorPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Admin\MainWindowAdmin.xaml.cs">
+    <Compile Update="MainWindowAdmin.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Admin\PatientPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Doctors\DoctorMainWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Patient\PatientMainPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -27,16 +33,22 @@
     <Page Update="Admin\DoctorPage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Admin\MainWindowAdmin.xaml">
+    <Page Update="MainWindowAdmin.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Admin\PatientPage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="MainWindow.xaml">
+    <Page Update="Doctors\DoctorMainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Patient\PatientMainPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Themes\DarkTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\DataTemplates.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Themes\LightTheme.xaml">

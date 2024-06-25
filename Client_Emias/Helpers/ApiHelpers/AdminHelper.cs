@@ -3,14 +3,16 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Client_Emias.Helpers.ApiHelpers
 {
+
     public static class AdminHelper
     {
-        private static string Url = "http://localhost5102/Api/Admins";
+        private static string Url = $"http://localhost:{App.Port}/Api/Admins";
 
         public static string GetAdmins()
         {

@@ -10,7 +10,7 @@ namespace Client_Emias.Helpers.ApiHelpers
 {
     public static class ResearchDocumentsControllerHelper
     {
-        private static string Url = "http://localhost5102/Api/ResearchDocuments";
+        private static string Url = $"http://localhost:{App.Port}/Api/ResearchDocuments";
 
         public static string GetResearchDocuments()
         {

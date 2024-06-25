@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace Client_Emias.Helpers.ApiHelpers
 {
-    public static class DirectionsControllerHelper
+    public static class DirectionsHelper
     {
         private static string Url = "http://localhost5102/Api/Directions";
 
-        public static string GetDirectionsController()
+        public static string GetDirections()
         {
             try
             {
@@ -26,7 +26,7 @@ namespace Client_Emias.Helpers.ApiHelpers
             }
         }
 
-        public static string GetDirectionsControllerId(int id)
+        public static string GetDirectionsId(int id)
         {
             try
             {
@@ -40,7 +40,7 @@ namespace Client_Emias.Helpers.ApiHelpers
             }
         }
 
-        public static string PutDirectionsController(string json, int id)
+        public static string PutDirections(string json, int id)
         {
             try
             {
@@ -55,7 +55,7 @@ namespace Client_Emias.Helpers.ApiHelpers
             }
         }
 
-        public static string DeleteDirectionsController(int id)
+        public static string DeleteDirections(int id)
         {
             try
             {
@@ -70,7 +70,7 @@ namespace Client_Emias.Helpers.ApiHelpers
             }
         }
 
-        public static string PostDirectionsController(string json)
+        public static string PostDirections(string json)
         {
             try
             {
@@ -91,6 +91,20 @@ namespace Client_Emias.Helpers.ApiHelpers
             {
                 HttpClient client = new HttpClient();
                 HttpResponseMessage message = client.GetAsync(Url + "/byoms/" + oms).Result;
+                return message.Content.ReadAsStringAsync().Result;
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+        }
+
+        public static string GetDierctionsBySpeciality(int docID)
+        {
+            try
+            {
+                HttpClient client = new HttpClient();
+                HttpResponseMessage message = client.GetAsync(Url + "/byspeciality/" + docID).Result;
                 return message.Content.ReadAsStringAsync().Result;
             }
             catch (Exception ex)

@@ -10,7 +10,7 @@ namespace Client_Emias.Helpers.ApiHelpers
 {
     public static class AppointmentDocumentsHelper
     {
-        private static string Url = "http://localhost5102/Api/AppointmentDocuments";
+        private static string Url = $"http://localhost:{App.Port}/Api/AppointmentDocuments";
 
         public static string GetAppointmentDocuments()
         {

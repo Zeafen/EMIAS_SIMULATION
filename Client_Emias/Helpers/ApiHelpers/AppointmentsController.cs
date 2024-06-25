@@ -51,6 +51,19 @@ namespace Client_Emias.Helpers.ApiHelpers
                 return ex.Message;
             }
         }
+        public static string GetAppointmentsByDocID(int docID)
+        {
+            try
+            {
+                HttpClient client = new HttpClient();
+                HttpResponseMessage message = client.GetAsync(Url + "/bydoctor/"+ docID).Result;
+                return message.Content.ReadAsStringAsync().Result;
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+        }
 
         public static string GetAppointmentsId(int id)
         {

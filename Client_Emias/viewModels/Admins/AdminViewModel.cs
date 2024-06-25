@@ -97,7 +97,7 @@ namespace Client_Emias.viewModels.Admins
         public ObservableCollection<Admin> Admins { get; set; }
         public ObservableCollection<Speciality> Specialities { get; set; }
 
-        private Patient _selectedPatient {  get; set; }
+        private Patient _selectedPatient {  get; set; } = new Patient();
         public Patient SelectedPatient
         {
             get => _selectedPatient;
@@ -109,7 +109,7 @@ namespace Client_Emias.viewModels.Admins
             }
         }
 
-        private Doctor _selectedDoctor {  get; set; }
+        private Doctor _selectedDoctor {  get; set; } = new Doctor();
         public Doctor SelectedDoctor
         {
             get => _selectedDoctor;
@@ -121,7 +121,7 @@ namespace Client_Emias.viewModels.Admins
                 OnPropertyChanged();
             }
         }
-        private Admin _selectedAdmin {  get; set; }
+        private Admin _selectedAdmin { get; set; } = new Admin();
         public Admin SelectedAdmin
         {
             get => _selectedAdmin;
@@ -168,6 +168,7 @@ namespace Client_Emias.viewModels.Admins
         {
             try
             {
+                var str = PatientsHelper.GetPatients();
                 Patients = new ObservableCollection<Patient>(JsonConvert.DeserializeObject<ICollection<Patient>>(PatientsHelper.GetPatients())?? new List<Patient>());
                 Doctors = new ObservableCollection<Doctor>(JsonConvert.DeserializeObject<ICollection<Doctor>>(PatientsHelper.GetPatients()) ?? new List<Doctor>());
                 Admins = new ObservableCollection<Admin>(JsonConvert.DeserializeObject<ICollection<Admin>>(PatientsHelper.GetPatients()) ?? new List<Admin>());
@@ -227,6 +228,10 @@ namespace Client_Emias.viewModels.Admins
             {
                 Console.WriteLine(ex.Message);
             }
+            finally
+            {
+                UpdateSource();
+            }
         }
         private void UpdatePatient(Patient patient)
         {
@@ -235,13 +240,16 @@ namespace Client_Emias.viewModels.Admins
                 if (patient == null || patient.Oms == null)
                     return;
                 var key = patient.Oms;
-                patient.Oms = null;
                 var json = JsonConvert.SerializeObject(patient);
-                PatientsHelper.PutPatient(json, key??0);
+                var exec = PatientsHelper.PutPatient(json, key??0);
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                UpdateSource();
             }
         }
         private void DeletePatient(Patient patient)
@@ -255,6 +263,10 @@ namespace Client_Emias.viewModels.Admins
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                UpdateSource();
             }
         }
 
@@ -271,6 +283,10 @@ namespace Client_Emias.viewModels.Admins
             {
                 Console.WriteLine(ex.Message);
             }
+            finally
+            {
+                UpdateSource();
+            }
         }
         private void UpdateAdmin(Admin admin)
         {
@@ -279,13 +295,16 @@ namespace Client_Emias.viewModels.Admins
                 if (admin == null || admin.IdAdmin == null)
                     return;
                 var key = admin.IdAdmin;
-                admin.IdAdmin = null;
                 var json = JsonConvert.SerializeObject(admin);
                 AdminHelper.PutAdmin(json, key??0);
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                UpdateSource();
             }
         }
         private void DeleteAdmin(Admin admin)
@@ -299,6 +318,10 @@ namespace Client_Emias.viewModels.Admins
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                UpdateSource();
             }
         }
 
@@ -315,6 +338,10 @@ namespace Client_Emias.viewModels.Admins
             {
                 Console.WriteLine(ex.Message);
             }
+            finally
+            {
+                UpdateSource();
+            }
         }
         private void UpdateDoctor(Doctor doctor)
         {
@@ -323,13 +350,16 @@ namespace Client_Emias.viewModels.Admins
                 if (doctor == null || doctor.IdDoctor == null)
                     return;
                 var key = doctor.IdDoctor;
-                doctor.IdDoctor = null;
                 var json = JsonConvert.SerializeObject(doctor);
                 DoctorsHelper.PutDoctor(json, key??0);
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                UpdateSource();
             }
         }
         private void DeleteDoctor(Doctor doctor)
@@ -343,6 +373,10 @@ namespace Client_Emias.viewModels.Admins
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                UpdateSource();
             }
         }
         
