@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Client_Emias.Helpers.ApiHelpers
 {
-    public static class ResearchDocumentsControllerHelper
+    public static class ResearchDocumentsHelper
     {
         private static string Url = $"http://localhost:{App.Port}/Api/ResearchDocuments";
 
@@ -91,6 +91,20 @@ namespace Client_Emias.Helpers.ApiHelpers
             {
                 HttpClient client = new HttpClient();
                 HttpResponseMessage message = client.GetAsync(Url + "/byappointment/" + id).Result;
+                return message.Content.ReadAsStringAsync().Result;
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+        }
+
+        public static string GetResearchDocumentsByOms(long oms)
+        {
+            try
+            {
+                HttpClient client = new HttpClient();
+                HttpResponseMessage message = client.GetAsync(Url + "/byoms/" + oms).Result;
                 return message.Content.ReadAsStringAsync().Result;
             }
             catch (Exception ex)

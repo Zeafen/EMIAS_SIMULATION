@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Client_Emias.Helpers.ApiHelpers
 {
-    public static class StatusControllerHelper
+    public static class StatusHelper
     {
         private static string Url = $"http://localhost:{App.Port}/Api/Status";
 

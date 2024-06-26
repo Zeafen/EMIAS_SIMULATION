@@ -98,5 +98,19 @@ namespace Client_Emias.Helpers.ApiHelpers
                 return ex.Message;
             }
         }
+
+        public static string GetAnalysDocumentByOms(long oms)
+        {
+            try
+            {
+                HttpClient client = new HttpClient();
+                HttpResponseMessage message = client.GetAsync(Url + "/byoms/" + oms).Result;
+                return message.Content.ReadAsStringAsync().Result;
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+        }
     }
 }

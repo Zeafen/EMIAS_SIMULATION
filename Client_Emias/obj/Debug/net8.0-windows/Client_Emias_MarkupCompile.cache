@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\Kombucha\Desktop\EMIAS_SIMULATION\Client_Emias\App.xaml
 922763268
 
-411973625338
+42-729416060
 2021620737951
 Admin\AdminPage.xaml;Admin\DoctorPage.xaml;Admin\PatientPage.xaml;Doctors\DoctorMainWindow.xaml;MainWindowAdmin.xaml;Patient\PatientMainPage.xaml;Themes\DarkTheme.xaml;Themes\DataTemplates.xaml;Themes\LightTheme.xaml;
 
-False
+True
 
