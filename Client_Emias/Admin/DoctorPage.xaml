@@ -16,7 +16,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <DataGrid ItemsSource="{Binding Doctors}" SelectionMode="Single" SelectedItem="{Binding SelectedDoctor, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" Background="{DynamicResource SecondaryBackground}">
+        <DataGrid ItemsSource="{Binding Doctors}" SelectionMode="Single" SelectedItem="{Binding SelectedDoctor, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" Background="{DynamicResource SecondaryBackground}"  AutoGenerateColumns="False" HorizontalScrollBarVisibility="Visible" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID Доктора" Binding="{Binding IdDoctor}"/>
                 <DataGridTextColumn Header="Фамилия" Binding="{Binding SurName}"/>

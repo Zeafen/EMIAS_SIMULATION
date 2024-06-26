@@ -31,7 +31,7 @@ namespace Client_Emias.AdminPages
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             string selectedRole = (RolesComboBox.SelectedItem as ComboBoxItem).Content.ToString();
-
+            adminVm.UpdateSource();
             if (selectedRole == "Врач")
                 (Application.Current.MainWindow as MainWindowAdmin).MainFrame.Content = new DoctorPage(adminVm);
             else if (selectedRole == "Администратор")

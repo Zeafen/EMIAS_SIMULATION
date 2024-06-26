@@ -47,7 +47,7 @@ namespace Client_Emias.viewModels.Admins
             canExecute: (Admin admin) =>
             {
                 return IsAdminNotBlank(admin) &&
-                Admins.FirstOrDefault(a => a.IdAdmin == admin.IdAdmin) == null;
+                (admin.IdAdmin == null || Admins.FirstOrDefault(a => a.IdAdmin == admin.IdAdmin) == null);
             }));
         private RelayCommand<Admin>? _updateAdminCommand = null;
         public RelayCommand<Admin> UpdateAdminCommand => _updateAdminCommand ?? (_updateAdminCommand = new RelayCommand<Admin>(
@@ -200,8 +200,7 @@ namespace Client_Emias.viewModels.Admins
                 !string.IsNullOrEmpty(admin.Patronymic) &&
                 !string.IsNullOrEmpty(admin.Name) &&
                 !string.IsNullOrEmpty(admin.EnterPassword) &&
-                !string.IsNullOrEmpty(admin.SurName) &&
-                admin.IdAdmin != null && admin.IdAdmin > 0;
+                !string.IsNullOrEmpty(admin.SurName);
         }
         private bool IsDoctorNotBlank(Doctor doc)
         {

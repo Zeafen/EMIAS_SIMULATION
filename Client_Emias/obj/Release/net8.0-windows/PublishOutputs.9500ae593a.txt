@@ -1,0 +1,9 @@
+C:\Users\Kombucha\Desktop\C#\NewFolder\Client_Emias.exe
+C:\Users\Kombucha\Desktop\C#\NewFolder\Client_Emias.dll
+C:\Users\Kombucha\Desktop\C#\NewFolder\Client_Emias.deps.json
+C:\Users\Kombucha\Desktop\C#\NewFolder\Client_Emias.runtimeconfig.json
+C:\Users\Kombucha\Desktop\C#\NewFolder\Client_Emias.pdb
+C:\Users\Kombucha\Desktop\C#\NewFolder\MaterialDesignColors.dll
+C:\Users\Kombucha\Desktop\C#\NewFolder\MaterialDesignThemes.Wpf.dll
+C:\Users\Kombucha\Desktop\C#\NewFolder\Microsoft.Xaml.Behaviors.dll
+C:\Users\Kombucha\Desktop\C#\NewFolder\Newtonsoft.Json.dll

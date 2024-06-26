@@ -30,6 +30,7 @@ namespace Client_Emias.AdminPages
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            adminVm.UpdateSource();
             string selectedRole = (RolesComboBox.SelectedItem as ComboBoxItem).Content.ToString();
 
             if (selectedRole == "Пользователь")
