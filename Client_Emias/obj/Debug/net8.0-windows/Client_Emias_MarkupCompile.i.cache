@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\кальмар в эболе\source\repos\EMIAS_SIMULATION\Client_Emias\App.xaml
-152072004493
+10-1763527539
 
-45-83703614
+40741525524
 1991897212688
-MainWindow.xaml;viewModels\Client\AdminAdmin.xaml;viewModels\Client\AdminDoctor.xaml;viewModels\Client\AdminPatient.xaml;viewModels\Client\AppointmentBook.xaml;viewModels\Client\ChooseSpecial.xaml;viewModels\Client\DoctorMain.xaml;viewModels\Client\MainWindow.xaml;viewModels\Client\MedCard.xaml;viewModels\Client\MedCardAnalysis.xaml;viewModels\Client\MedCardAppointments.xaml;viewModels\Client\MedCardResearsches.xaml;viewModels\Client\PatientAuthorization.xaml;viewModels\Client\PatientMain.xaml;viewModels\Client\UserProfile.xaml;
+viewModels\Client\AdminAdmin.xaml;viewModels\Client\AdminDoctor.xaml;viewModels\Client\AdminPatient.xaml;viewModels\Client\DoctorMain.xaml;viewModels\Client\MainWindow.xaml;viewModels\Client\MedCardAnalysys.xaml;viewModels\Client\MedCardAppointments.xaml;viewModels\Client\MedCardResearches.xaml;viewModels\Client\PatientMain.xaml;viewModels\Client\UserProfile.xaml;
 
 True
 

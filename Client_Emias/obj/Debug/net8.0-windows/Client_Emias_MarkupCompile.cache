@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Kombucha\Desktop\Client_Emias\Client_Emias\obj\Debug\net8.0-windows\
+C:\Users\кальмар в эболе\source\repos\EMIAS_SIMULATION\Client_Emias\obj\Debug\net8.0-windows\
 Client_Emias
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\Kombucha\Desktop\Client_Emias\Client_Emias\App.xaml
-11407045341
+C:\Users\кальмар в эболе\source\repos\EMIAS_SIMULATION\Client_Emias\App.xaml
+14664959152
 
-29-202338427
-198-688555687
-MainWindow.xaml;
+42-1707354949
+1991897212688
+viewModels\Client\AdminAdmin.xaml;viewModels\Client\AdminDoctor.xaml;viewModels\Client\AdminPatient.xaml;viewModels\Client\AppointmentBook.xaml;viewModels\Client\ChooseSpecial.xaml;viewModels\Client\DoctorMain.xaml;viewModels\Client\MainWindow.xaml;viewModels\Client\MedCard.xaml;viewModels\Client\MedCardAnalysis.xaml;viewModels\Client\MedCardAppointments.xaml;viewModels\Client\MedCardResearsches.xaml;viewModels\Client\PatientAuthorization.xaml;viewModels\Client\PatientMain.xaml;viewModels\Client\UserProfile.xaml;
 
-True
+False
 

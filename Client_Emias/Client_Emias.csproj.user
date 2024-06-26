@@ -7,7 +7,24 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="MainWindow.xaml">
+    <Compile Update="viewModels\Client\MedCardAnalysys.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="viewModels\Client\MedCardAppointments.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="viewModels\Client\MedCardResearches.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="viewModels\Client\MedCardAnalysys.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="viewModels\Client\MedCardAppointments.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="viewModels\Client\MedCardResearches.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

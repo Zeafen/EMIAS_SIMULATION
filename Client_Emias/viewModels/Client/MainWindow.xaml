@@ -7,8 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Пациент" HorizontalAlignment="Right" VerticalAlignment="Center" Click="Patient_Click" />
-        <Button Content ="Доктор" HorizontalAlignment="Left" VerticalAlignment="Center" Click="Dosctor_Click" />
+        <Button Content="Пациент" Click="Patient_Click" Grid.Column="2" />
+        <Button Content ="Доктор" Click="Doctor_Click" Grid.Column="0" />
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
 
     </Grid>
 </Window>

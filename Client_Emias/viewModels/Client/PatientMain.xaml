@@ -7,23 +7,25 @@
         mc:Ignorable="d"
         Title="PatientMain" Height="450" Width="800">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition Height="18*"/>
-        </Grid.RowDefinitions>
+        
 
-        <Grid Grid.Row="0">
+        <Grid Grid.Row="0" Grid.Column="1">
 
-            <Grid Grid.Column="0">
-                <TextBox Text="EMIAC"/>
-            </Grid>
+            <TextBlock Text="ЕМИАС" Grid.Column="0" VerticalAlignment="Center"/>
+            <TextBlock Text="в. 1.0" Grid.Column="1"/>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="0.22*"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+
+        <Grid Grid.Row="0" Grid.Column="4">
+
+            <TextBlock Text="Запись" VerticalAlignment="Center"/>
 
             <Grid Grid.Column="1">
-                <TextBox Text="--ФИО "/>
-            </Grid>
-
-            <Grid Grid.Column="2">
-
+                    
                 <Button Content="A" Grid.Column="0"/>
                 <Button Content="B" Grid.Column="1"/>
                 <Button Content="C" Grid.Column="2"/>
@@ -35,21 +37,92 @@
                 </Grid.ColumnDefinitions>
 
             </Grid>
-
+            
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.1*"/>
                 <ColumnDefinition/>
                 <ColumnDefinition Width="0.1*"/>
             </Grid.ColumnDefinitions>
-
         </Grid>
 
-        <Grid Grid.Row="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="3*"/>
-            </Grid.ColumnDefinitions>
+        <Grid Grid.Row="1" Grid.Column="1">
+
+            <Expander Grid.Row="0" Header="Главная" >
+                <StackPanel>
+                    <Button Content="Записи и направления"/>
+                    <Button Content="Рецепты"/>
+                    <Button Content="Диспанзеризация"/>
+                   
+                </StackPanel>
+            </Expander>
+         
+
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Expander Grid.Row="0" Header="Медкарта" >
+                    <StackPanel>
+                        <Button Content="Приемы"/>
+                        <Button Content="Анализы"/>
+                        <Button Content="Исследования"/>
+
+                    </StackPanel>
+                </Expander>
+                <Expander Grid.Row="1">
+
+                </Expander>
+            </Grid>
+
+            <Grid Grid.Row="3">
+
+                <Grid Grid.Row="0">
+                    <TextBlock Text="Полис ОМС:"/>
+                    <TextBlock Text="Ирина" Grid.Column="1"/>
+                    <Button Content="H" Grid.Column="2"/>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="0.3*"/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="0.3*"/>
+                </Grid.RowDefinitions>
+            </Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.4*"/>
+                <RowDefinition Height="0.4*"/>
+                <RowDefinition/>
+                <RowDefinition Height="0.07*"/>
+            </Grid.RowDefinitions>
         </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="3">
+            
+            
+            
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+        </Grid>
+        
+
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="18*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.02*"/>
+            <ColumnDefinition Width="0.25*"/>
+            <ColumnDefinition Width="0.03*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
 
     </Grid>
 </Window>

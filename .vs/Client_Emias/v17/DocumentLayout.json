@@ -3,12 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\EMIAS_SIMULATION\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7D0F0F33-DE20-4EAC-8C2D-43B54832A307}|Client_Emias\\Client_Emias.csproj|c:\\users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\emias_simulation\\client_emias\\viewmodels\\client\\medcardappointments.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7D0F0F33-DE20-4EAC-8C2D-43B54832A307}|Client_Emias\\Client_Emias.csproj|solutionrelative:client_emias\\viewmodels\\client\\medcardappointments.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D0F0F33-DE20-4EAC-8C2D-43B54832A307}|Client_Emias\\Client_Emias.csproj|c:\\users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\emias_simulation\\client_emias\\viewmodels\\client\\medcardresearches.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7D0F0F33-DE20-4EAC-8C2D-43B54832A307}|Client_Emias\\Client_Emias.csproj|solutionrelative:client_emias\\viewmodels\\client\\medcardresearches.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D0F0F33-DE20-4EAC-8C2D-43B54832A307}|Client_Emias\\Client_Emias.csproj|c:\\users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\emias_simulation\\client_emias\\viewmodels\\client\\medcardanalysys.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7D0F0F33-DE20-4EAC-8C2D-43B54832A307}|Client_Emias\\Client_Emias.csproj|solutionrelative:client_emias\\viewmodels\\client\\medcardanalysys.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D0F0F33-DE20-4EAC-8C2D-43B54832A307}|Client_Emias\\Client_Emias.csproj|c:\\users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\emias_simulation\\client_emias\\viewmodels\\client\\patientmain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7D0F0F33-DE20-4EAC-8C2D-43B54832A307}|Client_Emias\\Client_Emias.csproj|solutionrelative:client_emias\\viewmodels\\client\\patientmain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D0F0F33-DE20-4EAC-8C2D-43B54832A307}|Client_Emias\\Client_Emias.csproj|c:\\users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\emias_simulation\\client_emias\\viewmodels\\client\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7D0F0F33-DE20-4EAC-8C2D-43B54832A307}|Client_Emias\\Client_Emias.csproj|solutionrelative:client_emias\\viewmodels\\client\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D0F0F33-DE20-4EAC-8C2D-43B54832A307}|Client_Emias\\Client_Emias.csproj|c:\\users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\emias_simulation\\client_emias\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D0F0F33-DE20-4EAC-8C2D-43B54832A307}|Client_Emias\\Client_Emias.csproj|solutionrelative:client_emias\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7D0F0F33-DE20-4EAC-8C2D-43B54832A307}|Client_Emias\\Client_Emias.csproj|c:\\users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\emias_simulation\\client_emias\\viewmodels\\client\\doctormain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{7D0F0F33-DE20-4EAC-8C2D-43B54832A307}|Client_Emias\\Client_Emias.csproj|solutionrelative:client_emias\\viewmodels\\client\\doctormain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D0F0F33-DE20-4EAC-8C2D-43B54832A307}|Client_Emias\\Client_Emias.csproj|c:\\users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\emias_simulation\\client_emias\\models\\appointmentdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D0F0F33-DE20-4EAC-8C2D-43B54832A307}|Client_Emias\\Client_Emias.csproj|solutionrelative:client_emias\\models\\appointmentdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7D0F0F33-DE20-4EAC-8C2D-43B54832A307}|Client_Emias\\Client_Emias.csproj|c:\\users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\emias_simulation\\client_emias\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7D0F0F33-DE20-4EAC-8C2D-43B54832A307}|Client_Emias\\Client_Emias.csproj|solutionrelative:client_emias\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +42,69 @@
       "DocumentGroups": [
         {
           "DockedHeight": 392,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\EMIAS_SIMULATION\\Client_Emias\\App.xaml",
+              "RelativeDocumentMoniker": "Client_Emias\\App.xaml",
+              "ToolTip": "C:\\Users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\EMIAS_SIMULATION\\Client_Emias\\App.xaml",
+              "RelativeToolTip": "Client_Emias\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-25T21:49:36.355Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MedCardAppointments.xaml",
+              "DocumentMoniker": "C:\\Users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\EMIAS_SIMULATION\\Client_Emias\\viewModels\\Client\\MedCardAppointments.xaml",
+              "RelativeDocumentMoniker": "Client_Emias\\viewModels\\Client\\MedCardAppointments.xaml",
+              "ToolTip": "C:\\Users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\EMIAS_SIMULATION\\Client_Emias\\viewModels\\Client\\MedCardAppointments.xaml",
+              "RelativeToolTip": "Client_Emias\\viewModels\\Client\\MedCardAppointments.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-26T03:20:17.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MedCardResearches.xaml",
+              "DocumentMoniker": "C:\\Users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\EMIAS_SIMULATION\\Client_Emias\\viewModels\\Client\\MedCardResearches.xaml",
+              "RelativeDocumentMoniker": "Client_Emias\\viewModels\\Client\\MedCardResearches.xaml",
+              "ToolTip": "C:\\Users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\EMIAS_SIMULATION\\Client_Emias\\viewModels\\Client\\MedCardResearches.xaml",
+              "RelativeToolTip": "Client_Emias\\viewModels\\Client\\MedCardResearches.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-26T03:16:59.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MedCardAnalysys.xaml",
+              "DocumentMoniker": "C:\\Users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\EMIAS_SIMULATION\\Client_Emias\\viewModels\\Client\\MedCardAnalysys.xaml",
+              "RelativeDocumentMoniker": "Client_Emias\\viewModels\\Client\\MedCardAnalysys.xaml",
+              "ToolTip": "C:\\Users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\EMIAS_SIMULATION\\Client_Emias\\viewModels\\Client\\MedCardAnalysys.xaml",
+              "RelativeToolTip": "Client_Emias\\viewModels\\Client\\MedCardAnalysys.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-26T03:15:12.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PatientMain.xaml",
+              "DocumentMoniker": "C:\\Users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\EMIAS_SIMULATION\\Client_Emias\\viewModels\\Client\\PatientMain.xaml",
+              "RelativeDocumentMoniker": "Client_Emias\\viewModels\\Client\\PatientMain.xaml",
+              "ToolTip": "C:\\Users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\EMIAS_SIMULATION\\Client_Emias\\viewModels\\Client\\PatientMain.xaml",
+              "RelativeToolTip": "Client_Emias\\viewModels\\Client\\PatientMain.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-26T01:13:24.775Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -70,19 +155,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AppointmentDocument.cs",
-              "DocumentMoniker": "C:\\Users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\EMIAS_SIMULATION\\Client_Emias\\Models\\AppointmentDocument.cs",
-              "RelativeDocumentMoniker": "Client_Emias\\Models\\AppointmentDocument.cs",
-              "ToolTip": "C:\\Users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\EMIAS_SIMULATION\\Client_Emias\\Models\\AppointmentDocument.cs",
-              "RelativeToolTip": "Client_Emias\\Models\\AppointmentDocument.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "DocumentIndex": 5,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\EMIAS_SIMULATION\\Client_Emias\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Client_Emias\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\EMIAS_SIMULATION\\Client_Emias\\App.xaml.cs",
+              "RelativeToolTip": "Client_Emias\\App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T15:42:17.254Z"
+              "WhenOpened": "2024-06-25T22:02:49.511Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\EMIAS_SIMULATION\\Client_Emias\\viewModels\\Client\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Client_Emias\\viewModels\\Client\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\EMIAS_SIMULATION\\Client_Emias\\viewModels\\Client\\MainWindow.xaml",
+              "RelativeToolTip": "Client_Emias\\viewModels\\Client\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-25T21:13:57.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "DoctorMain.xaml",
               "DocumentMoniker": "C:\\Users\\\u043A\u0430\u043B\u044C\u043C\u0430\u0440 \u0432 \u044D\u0431\u043E\u043B\u0435\\source\\repos\\EMIAS_SIMULATION\\Client_Emias\\viewModels\\Client\\DoctorMain.xaml",
               "RelativeDocumentMoniker": "Client_Emias\\viewModels\\Client\\DoctorMain.xaml",

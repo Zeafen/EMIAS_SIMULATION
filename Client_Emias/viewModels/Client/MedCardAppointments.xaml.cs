@@ -10,6 +10,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Client_Emias.viewModels.Client
@@ -17,7 +18,7 @@ namespace Client_Emias.viewModels.Client
     /// <summary>
     /// Логика взаимодействия для MedCardAppointments.xaml
     /// </summary>
-    public partial class MedCardAppointments : Window
+    public partial class MedCardAppointments : Page
     {
         public MedCardAppointments()
         {

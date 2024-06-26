@@ -1,12 +1,126 @@
-﻿<Window x:Class="Client_Emias.viewModels.Client.MedCardAppointments"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Client_Emias.viewModels.Client"
-        mc:Ignorable="d"
-        Title="MedCardAppointments" Height="450" Width="800">
+﻿<Page x:Class="Client_Emias.viewModels.Client.MedCardAppointments"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Client_Emias.viewModels.Client"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MedCardAppointments">
+
     <Grid>
-        
+        <Grid Grid.Row="0" Grid.Column="1">
+
+            <TextBlock Text="ЕМИАС" Grid.Column="0" VerticalAlignment="Center"/>
+            <TextBlock Text="в. 1.0" Grid.Column="1"/>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="0.22*"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+
+        <Grid Grid.Row="0" Grid.Column="4">
+
+            <TextBlock Text="Приёмы" VerticalAlignment="Center"/>
+
+            <Grid Grid.Column="1">
+
+                <Button Content="A" Grid.Column="0"/>
+                <Button Content="B" Grid.Column="1"/>
+                <Button Content="C" Grid.Column="2"/>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+            </Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="0.1*"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="1">
+
+            <Expander Grid.Row="0" Header="Главная" >
+                <StackPanel>
+                    <Button Content="Записи и направления"/>
+                    <Button Content="Рецепты"/>
+                    <Button Content="Диспанзеризация"/>
+
+                </StackPanel>
+            </Expander>
+
+
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Expander Grid.Row="0" Header="Медкарта" >
+                    <StackPanel>
+                        <Button Content="Приемы"/>
+                        <Button Content="Анализы"/>
+                        <Button Content="Исследования"/>
+
+                    </StackPanel>
+                </Expander>
+                <Expander Grid.Row="1">
+
+                </Expander>
+            </Grid>
+
+            <Grid Grid.Row="3">
+
+                <Grid Grid.Row="0">
+                    <TextBlock Text="Полис ОМС:"/>
+                    <TextBlock Text="Ирина" Grid.Column="1"/>
+                    <Button Content="H" Grid.Column="2"/>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="0.3*"/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="0.3*"/>
+                </Grid.RowDefinitions>
+            </Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.4*"/>
+                <RowDefinition Height="0.4*"/>
+                <RowDefinition/>
+                <RowDefinition Height="0.07*"/>
+            </Grid.RowDefinitions>
+        </Grid>
+
+        <Grid Grid.Row="2" Grid.Column="4">
+
+            <TextBlock Text="Листбокс3" Grid.Column="0"/>
+            <TextBlock Text="РитчТекстбокс" Grid.Column="1"/>
+
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="18*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.02*"/>
+            <ColumnDefinition Width="0.25*"/>
+            <ColumnDefinition Width="0.03*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
     </Grid>
-</Window>
+</Page>
